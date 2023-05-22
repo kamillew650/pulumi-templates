@@ -1,0 +1,21 @@
+{
+  "name": "pulumi-templates",
+  "main": "index.ts",
+  "packageManager": "pnpm",
+  "scripts": {
+    "preview": "pnpm dotenv -e ./.env pulumi preview",
+    "up": "pnpm dotenv -e ./.env pulumi up",
+    "destroy": "pnpm dotenv -e ./.env pulumi destroy",
+    "cancel": "pnpm dotenv -e ./.env pulumi cancel"
+  },
+  "devDependencies": {
+    "@types/node": "^16"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^5.0.0",
+    "@pulumi/awsx": "^1.0.0",
+    "@pulumi/pulumi": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.2.1"
+  }
+}
